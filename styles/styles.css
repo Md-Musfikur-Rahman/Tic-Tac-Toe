@@ -1,12 +1,11 @@
 body {
+  height: 100vh;
   margin: 0 auto;
   font-family: "Roboto";
   color: rgb(44, 41, 44);
-  background-color: #e8f2fa;
-  background-image: url(/v.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position-x: center;
+  /* background-color: #e8f2fa; */
+  background-image: linear-gradient(pink, powderblue);
+  background-color: powderblue;
 }
 
 #main-header {
