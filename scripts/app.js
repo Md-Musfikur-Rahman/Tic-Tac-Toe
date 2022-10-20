@@ -21,6 +21,7 @@ const players = [
   },
 ];
 
+const playerInfo = document.getElementById("playerInfo");
 const playerOverlays = document.getElementById("config-overlay");
 const backDrop = document.getElementById("backdrop");
 const form = document.querySelector("form");

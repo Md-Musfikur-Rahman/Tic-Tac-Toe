@@ -28,6 +28,7 @@ function startNewGame() {
 
   activePlayerName.textContent = players[activePlayer].userName;
   activeGame.style.display = "block";
+  playerInfo.style.display = "none";
 }
 
 function switchPlayer() {
