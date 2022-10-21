@@ -1,16 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   font-family: "Roboto";
   color: rgb(44, 41, 44);
-  /* background-color: #e8f2fa; */
   background-image: linear-gradient(pink, powderblue);
-  background-color: powderblue;
 }
 
 #main-header {
-  /* background-color: #ff00ff; */
-  color: white;
+  color: rgb(44, 41, 44);
   padding: 2rem 5%;
   text-align: center;
 }
@@ -39,4 +42,22 @@ body {
 .btn-alt:hover {
   background-color: #bfd7ed;
   border-color: transparent;
+}
+
+footer {
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #0000ff;
+  color: pink;
+  font-size: large;
+  padding: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: pink;
+  cursor: pointer;
 }

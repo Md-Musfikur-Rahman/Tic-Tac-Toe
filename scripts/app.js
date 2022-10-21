@@ -21,6 +21,10 @@ const players = [
   },
 ];
 
+let player1 = document.getElementById("player-1-s").innerText;
+
+let player2 = document.getElementById("player-2-s").innerText;
+
 const playerInfo = document.getElementById("playerInfo");
 const playerOverlays = document.getElementById("config-overlay");
 const backDrop = document.getElementById("backdrop");
@@ -31,6 +35,8 @@ const activePlayerName = document.getElementById("active-player-name");
 const gameOverEnd = document.getElementById("game-over");
 const winnerName = document.getElementById("winner-name");
 const aleartMsg = document.getElementById("aleart-msg");
+const scoreBoard = document.getElementById("scoreBoard");
+const addScore = document.getElementById("player-symbol");
 
 const editPlayer1Btn = document.getElementById("edit-player-1-btn");
 const editPlayer2Btn = document.getElementById("edit-player-2-btn");

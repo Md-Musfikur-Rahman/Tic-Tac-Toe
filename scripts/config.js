@@ -26,7 +26,11 @@ function saveInfo(event) {
   const updatePlayerName = document.getElementById(
     "player-" + editedPlayerId + "-data"
   );
+  const addName = document.getElementById("player-" + editedPlayerId);
+
   updatePlayerName.children[1].textContent = enteredPlayerName;
+
+  addName.children[1].textContent = enteredPlayerName;
 
   players[editedPlayerId - 1].userName = enteredPlayerName;
 

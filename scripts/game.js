@@ -28,6 +28,7 @@ function startNewGame() {
 
   activePlayerName.textContent = players[activePlayer].userName;
   activeGame.style.display = "block";
+  scoreBoard.style.display = "block";
   playerInfo.style.display = "none";
 }
 
@@ -119,7 +120,16 @@ function endGame(winnerId) {
   if (winnerId > 0) {
     const winner = players[winnerId - 1].userName;
     gameOverEnd.firstElementChild.firstElementChild.textContent = winner;
+    updateScore(winnerId);
   } else {
     gameOverEnd.firstElementChild.textContent = "It's a draw";
+  }
+}
+
+function updateScore(winnerId) {
+  if (winnerId == 1) {
+    document.getElementById("player-1-s").innerText = ++player1;
+  } else {
+    document.getElementById("player-2-s").innerText = ++player2;
   }
 }
